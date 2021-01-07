@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Interactive Story</title>
+</head>
+
+<body>
+  <h1>My Christmas Story</h1>
+
+  <img src="IMG_4583.jpeg" width="200px">
+
+  <button id="wayOne" type="button">Way One</button>
+  <button id="wayTwo" type="button">Way Two</button>
+
+  <div>
+    <img id="pic" src="" width="200px">
+    <p id="story"></p>
+  </div>
+
+  <script>
+    var text1, image1;
+
+    function setStory(text, image) {
+      document.getElementById('story').innerHTML = text;
+      document.getElementById('pic').src = image;
+    }
+
+    document.getElementById('wayOne').onclick = function() {
+      text1 = "And here is way one of the story, and there is more to go.";
+      image1 = "pic2.jpeg";
+      setStory(text1, image1);
+    }
+
+    document.getElementById('wayTwo').onclick = function() {
+      text1 = "And this is way two of the story.";
+      image1 = "IMG_4559.jpeg";
+      setStory(text1, image1);
+    }
+  </script>
+</body>
+
+</html>
