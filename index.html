@@ -4,20 +4,49 @@
 <head>
   <meta charset="utf-8">
   <title>My Interactive Story</title>
+  <style>
+    .intro {
+      display: flex;
+      background-color: lightblue;
+      align-content: center;
+      padding: 25pt;
+    }
+    .choice {
+      background-color: darkblue;
+      padding: 25px;
+    }
+    .imageAndTextForChoice {
+      display: flex;
+      flex-direction: row;
+      background-color: yellow;
+      padding: 25px;
+    }
+    .pict {
+      padding: 25px;
+    }
+    .storyText {
+      padding: 25px;
+      font-size: 24pt;
+    }
+  </style>
 </head>
 
 <body>
   <h1>My Christmas Story</h1>
   <div class="intro">
-  <img src="IMG_4583.jpeg" width="200px">
-</div>
-<div class="choice">
-  <button id="wayOne" type="button">Way One</button>
-  <button id="wayTwo" type="button">Way Two</button>
-</div>
+    <img src="IMG_4583.jpeg" width="200px">
+  </div>
+  <div class="choice">
+    <button id="wayOne" type="button">Way One</button>
+    <button id="wayTwo" type="button">Way Two</button>
+  </div>
   <div class="imageAndTextForChoice">
-    <img id="pic" src="" width="200px">
-    <p id="story"></p>
+    <div class="pict">
+      <img id="pic" src="" width="200px">
+    </div>
+    <div class="storyText">
+      <p id="story"></p>
+    </div>
   </div>
 
   <script>
