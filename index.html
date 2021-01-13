@@ -13,7 +13,7 @@
 
   <button id="wayOne" type="button">Way One</button>
   <button id="wayTwo" type="button">Way Two</button>
-
+  <button id="wayThree" type="button">Way Three</button>
   <div>
     <img id="pic" src="" width="200px">
     <p id="story"></p>
@@ -28,14 +28,20 @@
     }
 
     document.getElementById('wayOne').onclick = function() {
-      text1 = "And here is way one of the story, and there is more to go.";
+      text1 = "This is the first option";
       image1 = "pic2.jpeg";
       setStory(text1, image1);
     }
 
     document.getElementById('wayTwo').onclick = function() {
-      text1 = "And this is way two of the story. And this is another sentence.";
+      text1 = "This is the second option";
       image1 = "IMG_4559.jpeg";
+      setStory(text1, image1);
+    }
+
+    document.getElementById('wayThree').onclick = function() {
+      text1 = "And this is the third option of the story.";
+      image1 = "jeffdog.jpeg";
       setStory(text1, image1);
     }
   </script>
